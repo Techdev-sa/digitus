@@ -1,0 +1,7 @@
+{
+  "items": [
+    {"id": "val_001", "disagree_px": 4.8, "max_pt_px": 8.3},
+    {"id": "val_002", "disagree_px": 3.1, "max_pt_px": 5.4}
+  ],
+  "votes": {"val_001": "a"}
+}

@@ -1,0 +1,33 @@
+# Credentials and deployment config
+.cf_tok
+.tok_*
+.cloudflared/
+agents/
+*.env
+
+# Study data, captures and model weights never belong in this repository
+captures/
+hand_captures/
+*.pt
+*.pth
+*.jpg
+*.jpeg
+!ios/HandStudy/Assets.xcassets/**
+
+# Keep only the one script under server/data that the server imports
+server/data/*
+!server/data/synth_crease/
+server/data/synth_crease/*
+!server/data/synth_crease/run_overnight.py
+
+# Python
+__pycache__/
+*.pyc
+*.bak_*
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+.DS_Store

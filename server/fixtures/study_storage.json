@@ -1,0 +1,8 @@
+{
+  "free_gb": 84.7,
+  "total_gb": 512,
+  "used_gb": 427.3,
+  "warn_below_gb": 120,
+  "refuse_below_gb": 50,
+  "ok": false
+}

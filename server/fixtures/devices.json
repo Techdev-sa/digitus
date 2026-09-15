@@ -1,0 +1,26 @@
+{
+  "devices": [
+    {
+      "udid": "00008110-001234567890801E",
+      "activated": true,
+      "first_seen": "2026-08-28T09:10:00+00:00",
+      "last_seen": "2026-09-03T06:12:00+00:00",
+      "activated_utc": "2026-08-28T09:18:00+00:00",
+      "product": "iPhone15,3",
+      "version": "18.0",
+      "name": "Study device 01"
+    },
+    {
+      "udid": "00008120-004567890123802F",
+      "activated": false,
+      "first_seen": "2026-09-03T05:55:00+00:00",
+      "last_seen": "2026-09-03T05:55:00+00:00",
+      "activated_utc": null,
+      "product": "iPhone14,5",
+      "version": "17.6",
+      "name": "Study device 02"
+    }
+  ],
+  "activated": 1,
+  "slots": 5
+}

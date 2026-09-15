@@ -1,0 +1,33 @@
+{
+  "tags": {
+    "sex": ["male", "female"],
+    "autistic": ["yes", "no"],
+    "hand": ["right", "left"],
+    "study": ["yes", "no"],
+    "dominant_hand": ["right", "left", "ambidextrous"],
+    "nail_overhang": ["yes", "no"]
+  },
+  "subject_text": {
+    "nationality": "[A-Za-z \\ -]{1,40}",
+    "ethnicity": "[A-Za-z \\ -]{1,40}",
+    "operator": "[A-Za-z0-9_\\-]{1,32}",
+    "protocol": "[A-Za-z0-9_\\-./]{1,48}",
+    "notes": ".{0,240}"
+  },
+  "subject_numeric": {
+    "age": {"min": 0.0, "max": 25.0},
+    "height_cm": {"min": 30.0, "max": 220.0},
+    "weight_kg": {"min": 2.0, "max": 200.0}
+  },
+  "geometry_numeric": {
+    "distance_mm": {"min": 50.0, "max": 2000.0},
+    "tilt_deg": {"min": 0.0, "max": 90.0},
+    "roll_deg": {"min": -180.0, "max": 180.0},
+    "hand_fraction": {"min": 0.0, "max": 1.0},
+    "depth_confidence": {"min": 0.0, "max": 1.0}
+  },
+  "identifiers": ["subject", "source", "store", "app_version"],
+  "json_blobs": ["ar", "device_info"],
+  "crease_convention": "most-proximal-v1",
+  "model_checkpoint": "synth_heatmap_robust768.pt"
+}

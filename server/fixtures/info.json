@@ -1,0 +1,7 @@
+{
+  "checkpoint": "synth_heatmap_anisofixed.pt",
+  "device": "cuda:0",
+  "input_size": 1024,
+  "tta": true,
+  "val_ratio_mae": 0.010998678261492069
+}

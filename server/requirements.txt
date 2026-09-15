@@ -1,0 +1,14 @@
+mediapipe>=1.0
+kagglehub>=0.3
+flask>=3.0
+numpy
+pandas
+matplotlib
+requests
+# optional, only for the facebookresearch/PALM (HuggingFace-gated) dataset:
+huggingface_hub
+# CreaseNet (our own keypoint model, train-as-you-go). For NVIDIA GPUs install
+# the matching CUDA build, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+torch
+torchvision

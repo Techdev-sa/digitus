@@ -1,0 +1,272 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10000000000000000000021 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000021 /* PrivacyInfo.xcprivacy */; };
+		B10000000000000000000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10000000000000000000020 /* Assets.xcassets */; };
+		B1000000000000000000000A /* HandStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000A /* HandStudyApp.swift */; };
+		B1000000000000000000000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000B /* ContentView.swift */; };
+		B1000000000000000000000C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000C /* Camera.swift */; };
+		B1000000000000000000000D /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000D /* Predictor.swift */; };
+		B1000000000000000000000E /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000E /* Engine.swift */; };
+		B1000000000000000000000F /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000000F /* Uploader.swift */; };
+		B10000000000000000000010 /* CreaseNet.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000010 /* CreaseNet.mlmodelc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C10000000000000000000021 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C10000000000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1000000000000000000000A /* HandStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandStudyApp.swift; sourceTree = "<group>"; };
+		F1000000000000000000000B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1000000000000000000000C /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		F1000000000000000000000D /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		F1000000000000000000000E /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		F1000000000000000000000F /* Uploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
+		F10000000000000000000010 /* CreaseNet.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CreaseNet.mlmodelc; sourceTree = "<group>"; };
+		F10000000000000000000011 /* HandStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		P1000000000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G1000000000000000000000A = {
+			isa = PBXGroup;
+			children = (
+				G1000000000000000000000B /* HandStudy */,
+				G1000000000000000000000C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000B /* HandStudy */ = {
+			isa = PBXGroup;
+			children = (
+				F1000000000000000000000A /* HandStudyApp.swift */,
+				F1000000000000000000000B /* ContentView.swift */,
+				F1000000000000000000000C /* Camera.swift */,
+				F1000000000000000000000D /* Predictor.swift */,
+				F1000000000000000000000E /* Engine.swift */,
+				F1000000000000000000000F /* Uploader.swift */,
+				F10000000000000000000010 /* CreaseNet.mlmodelc */,
+				C10000000000000000000020 /* Assets.xcassets */,
+				C10000000000000000000021 /* PrivacyInfo.xcprivacy */,
+			);
+			path = HandStudy;
+			sourceTree = "<group>";
+		};
+		G1000000000000000000000C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000011 /* HandStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T1000000000000000000000A /* HandStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = L1000000000000000000000A /* Build configuration list for PBXNativeTarget "HandStudy" */;
+			buildPhases = (
+				P1000000000000000000000A /* Sources */,
+				P1000000000000000000000B /* Frameworks */,
+				P1000000000000000000000C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandStudy;
+			productName = HandStudy;
+			productReference = F10000000000000000000011 /* HandStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		R1000000000000000000000A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					T1000000000000000000000A = {
+						CreatedOnToolsVersion = 26.5;
+						DevelopmentTeam = 5S5UU53JBZ;
+					};
+				};
+			};
+			buildConfigurationList = L1000000000000000000000B /* Build configuration list for PBXProject "HandStudy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G1000000000000000000000A;
+			productRefGroup = G1000000000000000000000C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T1000000000000000000000A /* HandStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		P1000000000000000000000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000010 /* CreaseNet.mlmodelc in Resources */,
+				B10000000000000000000020 /* Assets.xcassets in Resources */,
+				B10000000000000000000021 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		P1000000000000000000000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000000000000000000000A /* HandStudyApp.swift in Sources */,
+				B1000000000000000000000B /* ContentView.swift in Sources */,
+				B1000000000000000000000C /* Camera.swift in Sources */,
+				B1000000000000000000000D /* Predictor.swift in Sources */,
+				B1000000000000000000000E /* Engine.swift in Sources */,
+				B1000000000000000000000F /* Uploader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1000000000000000000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S5UU53JBZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hand Study uses the camera to photograph an open palm and measure the length of the index and ring fingers. Photographs are used only for this measurement.";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hand Study";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = sa.tdev.handstudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		C1000000000000000000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5S5UU53JBZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Hand Study uses the camera to photograph an open palm and measure the length of the index and ring fingers. Photographs are used only for this measurement.";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hand Study";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = sa.tdev.handstudy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C1000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C1000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		L1000000000000000000000A /* Build configuration list for PBXNativeTarget "HandStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1000000000000000000000A /* Debug */,
+				C1000000000000000000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		L1000000000000000000000B /* Build configuration list for PBXProject "HandStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1000000000000000000000C /* Debug */,
+				C1000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = R1000000000000000000000A /* Project object */;
+}

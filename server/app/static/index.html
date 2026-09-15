@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>2D:4D crease annotator</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <select id="datasetPick" title="annotate one dataset only"></select>
+  <span id="progress">loading…</span>
+  <span id="imageLabel"></span>
+  <span id="model" title="which model pre-places the points"></span>
+</header>
+<main>
+  <canvas id="canvas"></canvas>
+</main>
+<footer>
+  <span class="key k-ib">2D base</span>
+  <span class="key k-it">2D tip</span>
+  <span class="key k-rb">4D base</span>
+  <span class="key k-rt">4D tip</span>
+  <span id="modelGuessLegend" class="key k-guess" title="our model's current prediction, shown for comparison even while MediaPipe places the actual points">○ model's guess</span>
+  <span id="measure" title="live measurement from your current points; on Mendeley images the closest expert row is shown for comparison"></span>
+  <span id="hint" title="drag points · drag the dashed line = move it without changing length · wheel = zoom · drag bg / space = pan · Enter accept · Backspace back · S skip · F full image · Z zoom to points · E = set lines to expert CSV lengths and lock (Mendeley) · L = lock/unlock current lengths (endpoint drag then rotates instead of stretching)">⌨ shortcuts</span>
+  <span id="lastMatch" title="how close our model's guess was to your correction on the last accepted image"></span>
+  <span id="status"></span>
+</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>

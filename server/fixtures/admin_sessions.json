@@ -1,0 +1,43 @@
+{
+  "sessions": [
+    {
+      "id": "20260903_091500_4d2a",
+      "n": 20,
+      "edited": 2,
+      "clip": "clip.webm",
+      "has_full": true,
+      "sex": "female",
+      "autistic": "no",
+      "hand": "right",
+      "study": "yes",
+      "dominant_hand": "right",
+      "nail_overhang": "no"
+    },
+    {
+      "id": "20260903_090842_85c1",
+      "n": 18,
+      "edited": 0,
+      "clip": null,
+      "has_full": true,
+      "sex": "female",
+      "autistic": "no",
+      "hand": "left",
+      "study": "yes",
+      "dominant_hand": "right",
+      "nail_overhang": "no"
+    },
+    {
+      "id": "20260902_154124_ac11",
+      "n": 12,
+      "edited": 0,
+      "clip": "clip.webm",
+      "has_full": true,
+      "sex": "male",
+      "autistic": "yes",
+      "hand": "right",
+      "study": "yes",
+      "dominant_hand": "left",
+      "nail_overhang": "yes"
+    }
+  ]
+}

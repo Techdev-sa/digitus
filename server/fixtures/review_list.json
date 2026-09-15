@@ -1,0 +1,44 @@
+{
+  "total": 3,
+  "page": 0,
+  "per": 60,
+  "median": 0.9731,
+  "sd": 0.0148,
+  "flag_at": 0.0444,
+  "scored": null,
+  "strong": null,
+  "min": null,
+  "score_key": null,
+  "items": [
+    {
+      "id": "cap/20260903_091500_4d2a/f0001",
+      "src": "captures",
+      "ver": 1725344122,
+      "dataset": "20260903_091500_4d2a",
+      "ratio": 0.9726,
+      "edited": true,
+      "blurry": false,
+      "time": ""
+    },
+    {
+      "id": "cap/20260903_091500_4d2a/f0002",
+      "src": "captures",
+      "ver": 1725344122,
+      "dataset": "20260903_091500_4d2a",
+      "ratio": 0.9812,
+      "edited": false,
+      "blurry": false,
+      "time": ""
+    },
+    {
+      "id": "cap/20260903_091500_4d2a/f0003",
+      "src": "captures",
+      "ver": 1725344122,
+      "dataset": "20260903_091500_4d2a",
+      "ratio": 0.9561,
+      "edited": false,
+      "blurry": true,
+      "time": ""
+    }
+  ]
+}

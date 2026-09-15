@@ -1,0 +1,352 @@
+<title>Digitus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap">
+
+<style>
+:root{
+  --paper:#F1F5F3; --raise:#FFFFFF; --ink:#0D1614; --ink-2:#38504A; --ink-3:#6A827B;
+  --rule:#CBD8D3; --rule-soft:#DFE8E4;
+  --teal:#00695F; --teal-soft:#D5E7E3; --teal-line:#7FB8AF;
+  --brick:#A8443C; --brick-soft:#F0DEDB;
+  --band-m:#AECBC3; --band-f:#DEEAE6;
+  --band-m-line:#8FB3AA; --band-f-line:#BDD3CC;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0A100F; --raise:#121A18; --ink:#E7EFEC; --ink-2:#A8BCB6; --ink-3:#7C918B;
+    --rule:#26332F; --rule-soft:#1B2523;
+    --teal:#5FC6B8; --teal-soft:#12312C; --teal-line:#2F6B62;
+    --brick:#E08C84; --brick-soft:#33201E;
+    --band-m:#2C5148; --band-f:#182C29;
+    --band-m-line:#3E6D62; --band-f-line:#2A4741;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0A100F; --raise:#121A18; --ink:#E7EFEC; --ink-2:#A8BCB6; --ink-3:#7C918B;
+  --rule:#26332F; --rule-soft:#1B2523;
+  --teal:#5FC6B8; --teal-soft:#12312C; --teal-line:#2F6B62;
+  --brick:#E08C84; --brick-soft:#33201E;
+  --band-m:#2C5148; --band-f:#182C29;
+  --band-m-line:#3E6D62; --band-f-line:#2A4741;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 32px}
+h1,h2,h3{font-family:Newsreader,Georgia,serif; font-weight:500; text-wrap:balance; margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ink-3);
+}
+a{color:var(--teal)}
+:focus-visible{outline:2px solid var(--teal); outline-offset:3px; border-radius:2px}
+
+/* ---- masthead ---- */
+.mast{
+  display:flex; justify-content:space-between; align-items:baseline; gap:24px;
+  padding:26px 0 0; flex-wrap:wrap;
+}
+.mark{display:flex; align-items:baseline; gap:11px}
+.mark .n{font-family:Newsreader,serif; font-size:20px; font-weight:600; letter-spacing:-.01em}
+.mark .r{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--teal);
+  border:1px solid var(--teal-line); border-radius:2px; padding:2px 6px; letter-spacing:.04em;
+}
+
+/* ---- hero ---- */
+.hero{padding:64px 0 40px}
+.hero h1{font-size:clamp(38px,5.4vw,60px); line-height:1.06; letter-spacing:-.022em; max-width:17ch}
+.hero .stand{
+  margin-top:22px; font-size:19px; line-height:1.6; color:var(--ink-2); max-width:62ch;
+}
+.hero .stand b{color:var(--ink); font-weight:500}
+
+/* ---- the scale: the page's signature object ---- */
+.plot{margin-top:52px}
+.plot figcaption{
+  display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;
+  font-size:14px; color:var(--ink-3); margin-top:16px; line-height:1.5;
+}
+.plot figcaption span{max-width:46ch}
+.keys{display:flex; gap:20px; flex-wrap:wrap; margin-top:22px; font-size:13.5px; color:var(--ink-2)}
+.key{display:flex; align-items:center; gap:8px}
+.sw{width:22px; height:9px; border-radius:1px; display:inline-block}
+
+/* ---- reading sections ---- */
+section{padding:56px 0; border-top:1px solid var(--rule-soft)}
+section h2{font-size:clamp(25px,3vw,32px); letter-spacing:-.015em; margin-top:10px}
+.lede{font-size:18px; color:var(--ink-2); max-width:64ch; margin-top:16px}
+.lede b{color:var(--ink); font-weight:500}
+
+/* steps: a real sequence, so numbering is meaningful */
+.steps{list-style:none; padding:0; margin:34px 0 0; display:grid; gap:1px; background:var(--rule-soft)}
+.steps li{background:var(--paper); display:grid; grid-template-columns:44px 1fr; gap:18px; padding:20px 0}
+.steps .no{font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--teal); padding-top:3px}
+.steps h3{font-family:"IBM Plex Sans",sans-serif; font-size:16.5px; font-weight:600; letter-spacing:.005em}
+.steps p{margin:5px 0 0; color:var(--ink-2); font-size:15.5px; max-width:62ch}
+
+/* refusal table — state as form, not just number */
+.gates{width:100%; border-collapse:collapse; margin-top:30px}
+.gates th{
+  text-align:left; font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:500; padding:0 18px 12px 0; white-space:nowrap;
+}
+.gates td{padding:15px 18px 15px 0; border-top:1px solid var(--rule-soft); vertical-align:top; font-size:15.5px}
+.gates td:first-child{font-family:"IBM Plex Mono",monospace; white-space:nowrap; color:var(--ink)}
+.verdict{
+  display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.06em;
+  padding:3px 9px; border-radius:2px; white-space:nowrap;
+}
+.v-refuse{background:var(--brick-soft); color:var(--brick)}
+.v-flag{background:var(--teal-soft); color:var(--teal)}
+
+/* evidence bars */
+.bars{margin-top:34px; display:grid; gap:20px; max-width:640px}
+.bar{display:grid; grid-template-columns:1fr; gap:7px}
+.bar .top{display:flex; justify-content:space-between; align-items:baseline; gap:16px; font-size:15px}
+.bar .top .who{color:var(--ink-2)}
+.bar .top .val{font-family:"IBM Plex Mono",monospace; font-size:15px}
+.bar .track{height:9px; background:var(--rule-soft); border-radius:1px; overflow:hidden}
+.bar .fill{height:100%; background:var(--teal-line); border-radius:1px}
+.bar.us .fill{background:var(--teal)}
+.bar.us .val{color:var(--teal)}
+
+/* closing / cta */
+.cta{
+  margin-top:34px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;
+}
+.btn{
+  display:inline-block; background:var(--teal); color:var(--paper); text-decoration:none;
+  font-weight:600; font-size:15.5px; padding:13px 22px; border-radius:3px;
+}
+.btn:hover{filter:brightness(1.08)}
+.cta .aside{font-size:14px; color:var(--ink-3); max-width:40ch}
+
+.disclaim{
+  margin-top:44px; padding:20px 22px; border-left:2px solid var(--brick);
+  background:var(--raise); font-size:15px; color:var(--ink-2); max-width:70ch;
+}
+.disclaim b{color:var(--ink); font-weight:600}
+
+footer{padding:40px 0 64px; border-top:1px solid var(--rule-soft); margin-top:8px}
+.foot-grid{display:flex; justify-content:space-between; gap:28px; flex-wrap:wrap; font-size:13.5px; color:var(--ink-3)}
+
+@media (max-width:640px){
+  .hero{padding:44px 0 28px}
+  .steps li{grid-template-columns:32px 1fr; gap:12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="mark">
+      <span class="n">Digitus</span>
+      <span class="r mono">2D:4D</span>
+    </div>
+    <div class="eyebrow">Measurement instrument &middot; KSCDR</div>
+  </header>
+
+  <div class="hero">
+    <h1>A finger is easy to see and hard to measure.</h1>
+    <p class="stand">
+      Digitus measures the ratio between the index and ring finger from a photograph
+      of an open palm. The hard part is not finding the hand. It is that a photograph
+      records <b>projected</b> length &mdash; tilt the hand a few degrees away from the
+      lens and the fingers read short, and the error does not cancel between them.
+      So the instrument measures the hand and the conditions together, and reports
+      a ratio only with the spread it was measured to.
+    </p>
+
+    <figure class="plot" style="margin:52px 0 0">
+      <svg viewBox="0 0 1000 250" width="100%" height="250" role="img"
+           aria-label="A ratio scale from 0.85 to 1.05. Published reference bands for male and female right hands are drawn as wide translucent ranges. One capture from this instrument is marked at 0.927 with a spread of plus or minus 0.002, far narrower than either band.">
+        <!-- scale: 0.90 at x=70, 1.02 at x=950 — bounded to where the data actually lives -->
+        <g font-family="IBM Plex Mono, monospace" font-size="12.5" fill="currentColor" opacity=".55">
+          <text x="70"  y="228" text-anchor="middle">0.90</text>
+          <text x="290" y="228" text-anchor="middle">0.93</text>
+          <text x="510" y="228" text-anchor="middle">0.96</text>
+          <text x="730" y="228" text-anchor="middle">0.99</text>
+          <text x="950" y="228" text-anchor="middle">1.02</text>
+        </g>
+        <g stroke="currentColor" opacity=".22" stroke-width="1">
+          <line x1="70" y1="196" x2="950" y2="196"/>
+          <line x1="70" y1="196" x2="70" y2="204"/>
+          <line x1="290" y1="196" x2="290" y2="204"/>
+          <line x1="510" y1="196" x2="510" y2="204"/>
+          <line x1="730" y1="196" x2="730" y2="204"/>
+          <line x1="950" y1="196" x2="950" y2="204"/>
+        </g>
+
+        <!-- female band 0.947–1.003 -->
+        <rect x="415" y="38" width="411" height="34" rx="2" fill="var(--band-f)"
+              stroke="var(--band-f-line)" stroke-width="1"/>
+        <text x="421" y="30" font-family="IBM Plex Mono, monospace" font-size="12" fill="currentColor" opacity=".65">
+          female right hand · 0.975 ± 0.028
+        </text>
+        <!-- male band 0.934–0.994 -->
+        <rect x="319" y="86" width="440" height="34" rx="2" fill="var(--band-m)"
+              stroke="var(--band-m-line)" stroke-width="1"/>
+        <text x="325" y="78" font-family="IBM Plex Mono, monospace" font-size="12" fill="currentColor" opacity=".65">
+          male right hand · 0.964 ± 0.030
+        </text>
+
+        <!-- measured: 0.927 ± 0.0021 -->
+        <line x1="268" y1="134" x2="268" y2="196" stroke="var(--teal)" stroke-width="2"/>
+        <circle cx="268" cy="140" r="5.5" fill="var(--teal)"/>
+        <text x="258" y="162" text-anchor="end" font-family="IBM Plex Mono, monospace"
+              font-size="15" fill="var(--teal)" font-weight="500">0.927</text>
+        <text x="258" y="180" text-anchor="end" font-family="IBM Plex Mono, monospace"
+              font-size="12" fill="currentColor" opacity=".55">± 0.002</text>
+      </svg>
+      <figcaption>
+        <span>One capture, 24 frames, iPhone 15&nbsp;Pro. Reference ranges from flatbed
+          scans of 100 subjects measured by two observers.</span>
+        <span class="mono" style="color:var(--ink-3)">tilt 6.6° · lens 258 mm · 24/24 frames used</span>
+      </figcaption>
+      <div class="keys">
+        <span class="key"><i class="sw" style="background:var(--band-f);border:1px solid var(--band-f-line)"></i> published range, female</span>
+        <span class="key"><i class="sw" style="background:var(--band-m);border:1px solid var(--band-m-line)"></i> published range, male</span>
+        <span class="key"><i class="sw" style="background:var(--teal)"></i> this instrument, one hand</span>
+      </div>
+    </figure>
+  </div>
+
+  <section>
+    <div class="eyebrow">Method</div>
+    <h2>Four landmarks, and everything around them</h2>
+    <p class="lede">
+      The measurement itself is two distances. Almost all of the engineering is in
+      making those two distances mean the same thing twice.
+    </p>
+    <ol class="steps">
+      <li>
+        <span class="no">01</span>
+        <div>
+          <h3>Photograph the open palm</h3>
+          <p>Twenty-four frames on the phone. Live guidance keeps the hand flat and
+             filling the frame, and refuses to capture while it is not.</p>
+        </div>
+      </li>
+      <li>
+        <span class="no">02</span>
+        <div>
+          <h3>Place four landmarks</h3>
+          <p>A model on the phone's Neural Engine finds the base and tip of the index
+             and ring fingers. Bases follow the most-proximal crease, so two operators
+             measure from the same place.</p>
+        </div>
+      </li>
+      <li>
+        <span class="no">03</span>
+        <div>
+          <h3>Record the geometry</h3>
+          <p>The depth sensor records tilt, distance and how much of the frame the hand
+             fills &mdash; the conditions that decide whether the projected length can be
+             trusted.</p>
+        </div>
+      </li>
+      <li>
+        <span class="no">04</span>
+        <div>
+          <h3>Re-measure on the server</h3>
+          <p>The same model runs again on the server against the exact pixels received.
+             The phone proposes; it never decides the answer.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="eyebrow">Refusal</div>
+    <h2>What it declines to report</h2>
+    <p class="lede">
+      A plausible-looking number beside a spread of 0.45 is worse than no number:
+      the reader has no way to tell it is meaningless. So the instrument withholds
+      rather than guesses.
+    </p>
+    <table class="gates">
+      <thead>
+        <tr><th>Condition</th><th>Response</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SD &gt; 0.08</td>
+          <td><span class="verdict v-refuse">no number</span></td>
+          <td>Frames of one hand disagree far beyond the model's own spread &mdash; the hand was lost, not measured.</td>
+        </tr>
+        <tr>
+          <td>SD &gt; 0.04</td>
+          <td><span class="verdict v-flag">flagged</span></td>
+          <td>Usable, but the reading varies more than it should. Shown with the caveat attached.</td>
+        </tr>
+        <tr>
+          <td>&lt; 3 frames</td>
+          <td><span class="verdict v-refuse">no number</span></td>
+          <td>Too little evidence to call anything a measurement.</td>
+        </tr>
+        <tr>
+          <td>subgroup n &lt; 5</td>
+          <td><span class="verdict v-refuse">withheld</span></td>
+          <td>A median over two children invites a conclusion it cannot support.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="eyebrow">Evidence</div>
+    <h2>How closely it agrees with itself</h2>
+    <p class="lede">
+      Spread across the frames of a single hand, against the two benchmarks that
+      matter. Shorter is steadier.
+    </p>
+    <div class="bars">
+      <div class="bar us">
+        <div class="top"><span class="who">This instrument, one capture</span><span class="val">0.002</span></div>
+        <div class="track"><span class="fill" style="width:13%"></span></div>
+      </div>
+      <div class="bar">
+        <div class="top"><span class="who">Two trained observers, callipers</span><span class="val">0.008</span></div>
+        <div class="track"><span class="fill" style="width:50%"></span></div>
+      </div>
+      <div class="bar">
+        <div class="top"><span class="who">The model's own frame-to-frame spread</span><span class="val">0.016</span></div>
+        <div class="track"><span class="fill" style="width:100%"></span></div>
+      </div>
+    </div>
+    <div class="disclaim">
+      <b>This is repeatability, not accuracy.</b> It shows the instrument agrees with
+      itself. Establishing that it agrees with a calliper needs the same hands measured
+      both ways &mdash; which is the next piece of work, not a claim being made here.
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">Try it</div>
+    <h2>Point it at your own hand</h2>
+    <p class="lede">
+      The app runs the whole measurement on the phone and shows you the ratio, its
+      spread, and whether it considers the capture trustworthy.
+    </p>
+    <div class="cta">
+      <a class="btn" href="https://testflight.apple.com/join/UQqzDzzc">Open in TestFlight</a>
+      <span class="aside">iPhone, iOS&nbsp;17 or later. Tilt and distance guidance need a Pro model with a depth sensor. The TestFlight build is listed under its working name, Hand&nbsp;Study.</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-grid">
+      <span>Digitus &middot; a 2D:4D measurement instrument</span>
+      <span>It measures a ratio. It does not screen for, diagnose or predict any condition.</span>
+    </div>
+  </footer>
+
+</div>

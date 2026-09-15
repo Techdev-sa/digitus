@@ -1,0 +1,78 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "2D:4D crease keypoints. Input RGB image, output 4 points as normalised x,y in [0,1]: index_base, index_tip, ring_base, ring_tip.",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 8)",
+        "shortDescription" : "",
+        "shape" : "[1, 8]",
+        "name" : "points",
+        "type" : "MultiArray"
+      }
+    ],
+    "storagePrecision" : "Float16",
+    "modelParameters" : [
+
+    ],
+    "author" : "hand_ai driftfull",
+    "specificationVersion" : 8,
+    "mlProgramOperationTypeHistogram" : {
+      "Ios17.sigmoidHard" : 28,
+      "Ios17.mul" : 31,
+      "Ios17.sub" : 1,
+      "Ios17.conv" : 54,
+      "Stack" : 1,
+      "Ios16.upsampleBilinear" : 1,
+      "Ios17.add" : 6,
+      "Ios16.reduceMean" : 9,
+      "Ios16.relu" : 14,
+      "Ios16.softmax" : 1,
+      "Ios16.reduceSum" : 2,
+      "Ios17.thresholdedRelu" : 19,
+      "Ios17.reshape" : 3,
+      "Ios17.cast" : 1
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "14.0",
+      "tvOS" : "17.0",
+      "visionOS" : "1.0",
+      "watchOS" : "10.0",
+      "iOS" : "17.0",
+      "macCatalyst" : "17.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "height" : "1024",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "1024",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 1024 × 1024)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.conversion_date" : "2026-08-28",
+      "com.github.apple.coremltools.source" : "torch==2.11.0+cu128",
+      "com.github.apple.coremltools.version" : "9.0",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "generatedClassName" : "CreaseNet",
+    "method" : "predict"
+  }
+]

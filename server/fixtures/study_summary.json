@@ -1,0 +1,107 @@
+{
+  "n_sessions": 8,
+  "n_measured": 6,
+  "n_subjects": 6,
+  "quality_mix": {
+    "ok": 5,
+    "poor": 1,
+    "fail": 1,
+    "unknown": 1
+  },
+  "ratio": {
+    "n": 6,
+    "median": 0.96955,
+    "mean": 0.970983,
+    "sd": 0.0072
+  },
+  "ratio_histogram": {
+    "edges": [0.85, 0.86, 0.87, 0.88, 0.89, 0.9, 0.91, 0.92, 0.93, 0.94, 0.95, 0.96, 0.97, 0.98, 0.99, 1.0, 1.01, 1.02, 1.03, 1.04, 1.05, 1.06, 1.07, 1.08, 1.09, 1.1],
+    "counts": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  "sd": {
+    "n": 7,
+    "median": 0.018,
+    "mean": 0.030214,
+    "sd": 0.02745,
+    "above_poor": 2,
+    "above_fail": 1
+  },
+  "by_sex": {
+    "female": {
+      "n": 5,
+      "median": 0.9701,
+      "mean": 0.97138,
+      "sd": 0.00752
+    },
+    "male": {
+      "n": 2,
+      "withheld": true,
+      "note": "Withheld: fewer than 5 sessions in this subgroup."
+    }
+  },
+  "by_autistic": {
+    "no": {
+      "n": 6,
+      "median": 0.9701,
+      "mean": 0.97186,
+      "sd": 0.00786
+    },
+    "yes": {
+      "n": 2,
+      "withheld": true,
+      "note": "Withheld: fewer than 5 sessions in this subgroup."
+    }
+  },
+  "by_hand": {
+    "right": {
+      "n": 5,
+      "median": 0.9728,
+      "mean": 0.974225,
+      "sd": 0.00592
+    },
+    "left": {
+      "n": 3,
+      "withheld": true,
+      "note": "Withheld: fewer than 5 sessions in this subgroup."
+    }
+  },
+  "by_nationality": {
+    "Saudi": {
+      "n": 6,
+      "median": 0.9701,
+      "mean": 0.97138,
+      "sd": 0.00752
+    },
+    "Jordanian": {
+      "n": 2,
+      "withheld": true,
+      "note": "Withheld: fewer than 5 sessions in this subgroup."
+    }
+  },
+  "by_ethnicity": {
+    "Arab": {
+      "n": 6,
+      "median": 0.9701,
+      "mean": 0.97138,
+      "sd": 0.00752
+    },
+    "Other": {
+      "n": 2,
+      "withheld": true,
+      "note": "Withheld: fewer than 5 sessions in this subgroup."
+    }
+  },
+  "captures_over_time": [
+    {"date": "2026-09-01", "n": 1},
+    {"date": "2026-09-02", "n": 2},
+    {"date": "2026-09-03", "n": 2},
+    {"date": "2026-09-04", "n": 3}
+  ],
+  "reference_bands": {
+    "male": {"mean": 0.964, "sd": 0.03},
+    "female": {"mean": 0.975, "sd": 0.028}
+  },
+  "model_repeatability": 0.016,
+  "human_interobserver": 0.008,
+  "min_group": 5
+}
